@@ -1,0 +1,2276 @@
+<html>
+
+
+<head>
+
+
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+    <link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+    <script src="tsorter.min.js" type="text/javascript"></script>
+
+    <script>
+
+function init() {
+    var sorter = tsorter.create('rvimintemps');
+
+}
+
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+function GetClock(){
+var tzOffset = 0;
+var d=new Date();
+var dx=d.toGMTString();
+dx=dx.substr(0,dx.length -3);
+d.setTime(Date.parse(dx))
+d.setHours(d.getHours()+tzOffset);
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+if(nyear<1000) nyear+=1900;
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+if(nmin<=9) nmin="0"+nmin
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+}
+
+var addFunctionOnWindowLoad = function(callback){
+      if(window.addEventListener){
+          window.addEventListener('load',callback,false);
+      }else{
+          window.attachEvent('onload',callback);
+      }
+}
+
+addFunctionOnWindowLoad(init);
+addFunctionOnWindowLoad(GetClock);
+
+    </script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+<table class="rvimintemps" id="rvimintemps">
+
+<thead>
+<tr>
+<th>Date</th>
+<th data-tsorter="numeric">Year</th>
+<th data-tsorter="numeric">Rec Min</th>
+<th data-tsorter="numeric">Vulnerability</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Aug-11</td>
+<td align="right">1972</td>
+<td align="right">59</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td>Aug-19</td>
+<td align="right">1977</td>
+<td align="right">58</td>
+<td align="right">99.129</td>
+</tr>
+<tr>
+<td>Aug-09</td>
+<td align="right">2002</td>
+<td align="right">58</td>
+<td align="right">96.514</td>
+</tr>
+<tr>
+<td>Jul-19</td>
+<td align="right">1946</td>
+<td align="right">60</td>
+<td align="right">96.108</td>
+</tr>
+<tr>
+<td>Jul-20</td>
+<td align="right">1910</td>
+<td align="right">60</td>
+<td align="right">96.108</td>
+</tr>
+<tr>
+<td>Aug-02</td>
+<td align="right">1997</td>
+<td align="right">58</td>
+<td align="right">95.643</td>
+</tr>
+<tr>
+<td>Aug-03</td>
+<td align="right">1985</td>
+<td align="right">58</td>
+<td align="right">95.643</td>
+</tr>
+<tr>
+<td>Jul-21</td>
+<td align="right">2001</td>
+<td align="right">59</td>
+<td align="right">92.789</td>
+</tr>
+<tr>
+<td>Aug-16</td>
+<td align="right">1963</td>
+<td align="right">56</td>
+<td align="right">92.447</td>
+</tr>
+<tr>
+<td>May-30</td>
+<td align="right">1946</td>
+<td align="right">48</td>
+<td align="right">92.447</td>
+</tr>
+<tr>
+<td>May-29</td>
+<td align="right">1968</td>
+<td align="right">47</td>
+<td align="right">90.731</td>
+</tr>
+<tr>
+<td>Aug-06</td>
+<td align="right">2004</td>
+<td align="right">56</td>
+<td align="right">90.414</td>
+</tr>
+<tr>
+<td>Sep-07</td>
+<td align="right">1984</td>
+<td align="right">51</td>
+<td align="right">90.33</td>
+</tr>
+<tr>
+<td>Aug-05</td>
+<td align="right">1912</td>
+<td align="right">56</td>
+<td align="right">90.123</td>
+</tr>
+<tr>
+<td>Aug-26</td>
+<td align="right">1942</td>
+<td align="right">54</td>
+<td align="right">90.123</td>
+</tr>
+<tr>
+<td>Jul-26</td>
+<td align="right">1947</td>
+<td align="right">58</td>
+<td align="right">89.801</td>
+</tr>
+<tr>
+<td>May-21</td>
+<td align="right">1994</td>
+<td align="right">44</td>
+<td align="right">89.587</td>
+</tr>
+<tr>
+<td>Aug-01</td>
+<td align="right">1997</td>
+<td align="right">56</td>
+<td align="right">89.542</td>
+</tr>
+<tr>
+<td>Jul-15</td>
+<td align="right">2001</td>
+<td align="right">58</td>
+<td align="right">89.47</td>
+</tr>
+<tr>
+<td>Jul-16</td>
+<td align="right">1960</td>
+<td align="right">58</td>
+<td align="right">89.47</td>
+</tr>
+<tr>
+<td>Jun-20</td>
+<td align="right">1966</td>
+<td align="right">54</td>
+<td align="right">88.585</td>
+</tr>
+<tr>
+<td>Jun-03</td>
+<td align="right">1956</td>
+<td align="right">49</td>
+<td align="right">88.274</td>
+</tr>
+<tr>
+<td>Aug-10</td>
+<td align="right">1944</td>
+<td align="right">55</td>
+<td align="right">88.09</td>
+</tr>
+<tr>
+<td>Aug-21</td>
+<td align="right">1981</td>
+<td align="right">54</td>
+<td align="right">88.09</td>
+</tr>
+<tr>
+<td>Aug-08</td>
+<td align="right">2002</td>
+<td align="right">55</td>
+<td align="right">87.799</td>
+</tr>
+<tr>
+<td>Aug-20</td>
+<td align="right">1998</td>
+<td align="right">54</td>
+<td align="right">87.799</td>
+</tr>
+<tr>
+<td>Aug-27</td>
+<td align="right">1945</td>
+<td align="right">53</td>
+<td align="right">87.799</td>
+</tr>
+<tr>
+<td>Aug-04</td>
+<td align="right">1985</td>
+<td align="right">55</td>
+<td align="right">87.218</td>
+</tr>
+<tr>
+<td>Sep-13</td>
+<td align="right">1985</td>
+<td align="right">48</td>
+<td align="right">87.198</td>
+</tr>
+<tr>
+<td>Aug-25</td>
+<td align="right">1952</td>
+<td align="right">53</td>
+<td align="right">86.928</td>
+</tr>
+<tr>
+<td>Sep-18</td>
+<td align="right">1990</td>
+<td align="right">46</td>
+<td align="right">86.913</td>
+</tr>
+<tr>
+<td>May-15</td>
+<td align="right">1895</td>
+<td align="right">41</td>
+<td align="right">86.441</td>
+</tr>
+<tr>
+<td>Jul-24</td>
+<td align="right">1947</td>
+<td align="right">57</td>
+<td align="right">86.15</td>
+</tr>
+<tr>
+<td>Jul-14</td>
+<td align="right">1933</td>
+<td align="right">57</td>
+<td align="right">86.15</td>
+</tr>
+<tr>
+<td>Feb-01</td>
+<td align="right">1956</td>
+<td align="right">24</td>
+<td align="right">85.639</td>
+</tr>
+<tr>
+<td>Sep-08</td>
+<td align="right">1984</td>
+<td align="right">49</td>
+<td align="right">85.489</td>
+</tr>
+<tr>
+<td>Aug-12</td>
+<td align="right">1954</td>
+<td align="right">54</td>
+<td align="right">85.475</td>
+</tr>
+<tr>
+<td>Aug-22</td>
+<td align="right">2000</td>
+<td align="right">53</td>
+<td align="right">85.475</td>
+</tr>
+<tr>
+<td>Aug-28</td>
+<td align="right">1986</td>
+<td align="right">52</td>
+<td align="right">85.475</td>
+</tr>
+<tr>
+<td>Jun-16</td>
+<td align="right">1997</td>
+<td align="right">52</td>
+<td align="right">85.475</td>
+</tr>
+<tr>
+<td>Jun-25</td>
+<td align="right">1936</td>
+<td align="right">54</td>
+<td align="right">85.475</td>
+</tr>
+<tr>
+<td>May-13</td>
+<td align="right">1960</td>
+<td align="right">40</td>
+<td align="right">85.297</td>
+</tr>
+<tr>
+<td>Jul-03</td>
+<td align="right">1957</td>
+<td align="right">56</td>
+<td align="right">85.155</td>
+</tr>
+<tr>
+<td>May-03</td>
+<td align="right">1978</td>
+<td align="right">37</td>
+<td align="right">85.01</td>
+</tr>
+<tr>
+<td>Sep-04</td>
+<td align="right">1997</td>
+<td align="right">50</td>
+<td align="right">84.919</td>
+</tr>
+<tr>
+<td>Sep-16</td>
+<td align="right">2000</td>
+<td align="right">46</td>
+<td align="right">84.635</td>
+</tr>
+<tr>
+<td>Sep-03</td>
+<td align="right">1958</td>
+<td align="right">50</td>
+<td align="right">84.35</td>
+</tr>
+<tr>
+<td>Aug-18</td>
+<td align="right">1981</td>
+<td align="right">53</td>
+<td align="right">84.313</td>
+</tr>
+<tr>
+<td>Jun-22</td>
+<td align="right">1992</td>
+<td align="right">53</td>
+<td align="right">84.231</td>
+</tr>
+<tr>
+<td>Sep-06</td>
+<td align="right">1997</td>
+<td align="right">49</td>
+<td align="right">83.78</td>
+</tr>
+<tr>
+<td>May-01</td>
+<td align="right">1963</td>
+<td align="right">36</td>
+<td align="right">83.58</td>
+</tr>
+<tr>
+<td>Sep-02</td>
+<td align="right">1948</td>
+<td align="right">50</td>
+<td align="right">83.495</td>
+</tr>
+<tr>
+<td>Sep-20</td>
+<td align="right">1959</td>
+<td align="right">44</td>
+<td align="right">83.495</td>
+</tr>
+<tr>
+<td>Jul-30</td>
+<td align="right">1946</td>
+<td align="right">56</td>
+<td align="right">83.495</td>
+</tr>
+<tr>
+<td>Aug-24</td>
+<td align="right">1890</td>
+<td align="right">52</td>
+<td align="right">83.442</td>
+</tr>
+<tr>
+<td>Sep-27</td>
+<td align="right">1947</td>
+<td align="right">41</td>
+<td align="right">83.211</td>
+</tr>
+<tr>
+<td>Jul-25</td>
+<td align="right">1947</td>
+<td align="right">56</td>
+<td align="right">83.163</td>
+</tr>
+<tr>
+<td>Aug-14</td>
+<td align="right">1941</td>
+<td align="right">53</td>
+<td align="right">83.151</td>
+</tr>
+<tr>
+<td>Aug-23</td>
+<td align="right">1997</td>
+<td align="right">52</td>
+<td align="right">83.151</td>
+</tr>
+<tr>
+<td>May-19</td>
+<td align="right">2002</td>
+<td align="right">41</td>
+<td align="right">83.008</td>
+</tr>
+<tr>
+<td>Jul-17</td>
+<td align="right">1946</td>
+<td align="right">56</td>
+<td align="right">82.831</td>
+</tr>
+<tr>
+<td>Oct-31</td>
+<td align="right">1963</td>
+<td align="right">30</td>
+<td align="right">82.485</td>
+</tr>
+<tr>
+<td>May-26</td>
+<td align="right">1979</td>
+<td align="right">43</td>
+<td align="right">82.15</td>
+</tr>
+<tr>
+<td>Jun-21</td>
+<td align="right">1944</td>
+<td align="right">52</td>
+<td align="right">81.744</td>
+</tr>
+<tr>
+<td>Jun-13</td>
+<td align="right">1903</td>
+<td align="right">50</td>
+<td align="right">81.744</td>
+</tr>
+<tr>
+<td>May-14</td>
+<td align="right">2013</td>
+<td align="right">39</td>
+<td align="right">81.578</td>
+</tr>
+<tr>
+<td>Sep-30</td>
+<td align="right">1951</td>
+<td align="right">39</td>
+<td align="right">81.217</td>
+</tr>
+<tr>
+<td>Jun-27</td>
+<td align="right">1985</td>
+<td align="right">53</td>
+<td align="right">81.122</td>
+</tr>
+<tr>
+<td>Aug-17</td>
+<td align="right">1979</td>
+<td align="right">52</td>
+<td align="right">81.118</td>
+</tr>
+<tr>
+<td>May-24</td>
+<td align="right">1931</td>
+<td align="right">42</td>
+<td align="right">81.006</td>
+</tr>
+<tr>
+<td>Jun-28</td>
+<td align="right">1988</td>
+<td align="right">53</td>
+<td align="right">80.811</td>
+</tr>
+<tr>
+<td>Sep-09</td>
+<td align="right">1951</td>
+<td align="right">47</td>
+<td align="right">80.648</td>
+</tr>
+<tr>
+<td>Sep-12</td>
+<td align="right">1917</td>
+<td align="right">46</td>
+<td align="right">80.648</td>
+</tr>
+<tr>
+<td>Apr-05</td>
+<td align="right">1992</td>
+<td align="right">29</td>
+<td align="right">80.553</td>
+</tr>
+<tr>
+<td>Jul-31</td>
+<td align="right">1914</td>
+<td align="right">55</td>
+<td align="right">80.508</td>
+</tr>
+<tr>
+<td>Jul-07</td>
+<td align="right">1951</td>
+<td align="right">55</td>
+<td align="right">80.508</td>
+</tr>
+<tr>
+<td>Jul-29</td>
+<td align="right">1946</td>
+<td align="right">55</td>
+<td align="right">80.176</td>
+</tr>
+<tr>
+<td>May-31</td>
+<td align="right">1996</td>
+<td align="right">44</td>
+<td align="right">80.148</td>
+</tr>
+<tr>
+<td>Sep-01</td>
+<td align="right">1946</td>
+<td align="right">49</td>
+<td align="right">80.078</td>
+</tr>
+<tr>
+<td>Sep-22</td>
+<td align="right">1889</td>
+<td align="right">42</td>
+<td align="right">80.078</td>
+</tr>
+<tr>
+<td>Sep-29</td>
+<td align="right">1970</td>
+<td align="right">39</td>
+<td align="right">80.078</td>
+</tr>
+<tr>
+<td>Jul-27</td>
+<td align="right">1962</td>
+<td align="right">55</td>
+<td align="right">79.844</td>
+</tr>
+<tr>
+<td>Jul-12</td>
+<td align="right">1963</td>
+<td align="right">55</td>
+<td align="right">79.844</td>
+</tr>
+<tr>
+<td>Apr-29</td>
+<td align="right">1973</td>
+<td align="right">35</td>
+<td align="right">79.644</td>
+</tr>
+<tr>
+<td>Jul-22</td>
+<td align="right">1974</td>
+<td align="right">55</td>
+<td align="right">79.512</td>
+</tr>
+<tr>
+<td>Sep-19</td>
+<td align="right">1959</td>
+<td align="right">43</td>
+<td align="right">79.508</td>
+</tr>
+<tr>
+<td>Apr-26</td>
+<td align="right">1919</td>
+<td align="right">34</td>
+<td align="right">79.038</td>
+</tr>
+<tr>
+<td>Aug-07</td>
+<td align="right">1948</td>
+<td align="right">52</td>
+<td align="right">78.794</td>
+</tr>
+<tr>
+<td>Jun-26</td>
+<td align="right">1979</td>
+<td align="right">52</td>
+<td align="right">78.634</td>
+</tr>
+<tr>
+<td>Aug-31</td>
+<td align="right">1976</td>
+<td align="right">49</td>
+<td align="right">78.503</td>
+</tr>
+<tr>
+<td>Oct-17</td>
+<td align="right">1977</td>
+<td align="right">33</td>
+<td align="right">78.371</td>
+</tr>
+<tr>
+<td>Jun-17</td>
+<td align="right">1961</td>
+<td align="right">50</td>
+<td align="right">78.323</td>
+</tr>
+<tr>
+<td>Jun-10</td>
+<td align="right">1997</td>
+<td align="right">48</td>
+<td align="right">78.323</td>
+</tr>
+<tr>
+<td>Jul-04</td>
+<td align="right">1933</td>
+<td align="right">54</td>
+<td align="right">78.185</td>
+</tr>
+<tr>
+<td>May-08</td>
+<td align="right">1989</td>
+<td align="right">36</td>
+<td align="right">78.146</td>
+</tr>
+<tr>
+<td>Apr-04</td>
+<td align="right">1992</td>
+<td align="right">28</td>
+<td align="right">78.129</td>
+</tr>
+<tr>
+<td>Apr-23</td>
+<td align="right">1986</td>
+<td align="right">33</td>
+<td align="right">78.129</td>
+</tr>
+<tr>
+<td>Jun-04</td>
+<td align="right">1988</td>
+<td align="right">46</td>
+<td align="right">78.012</td>
+</tr>
+<tr>
+<td>Jun-07</td>
+<td align="right">1977</td>
+<td align="right">47</td>
+<td align="right">78.012</td>
+</tr>
+<tr>
+<td>Jul-05</td>
+<td align="right">1996</td>
+<td align="right">54</td>
+<td align="right">77.853</td>
+</tr>
+<tr>
+<td>Sep-15</td>
+<td align="right">1985</td>
+<td align="right">44</td>
+<td align="right">77.8</td>
+</tr>
+<tr>
+<td>Aug-15</td>
+<td align="right">1964</td>
+<td align="right">51</td>
+<td align="right">77.632</td>
+</tr>
+<tr>
+<td>May-05</td>
+<td align="right">1973</td>
+<td align="right">35</td>
+<td align="right">77.574</td>
+</tr>
+<tr>
+<td>Jul-06</td>
+<td align="right">1979</td>
+<td align="right">54</td>
+<td align="right">77.521</td>
+</tr>
+<tr>
+<td>Oct-19</td>
+<td align="right">2015</td>
+<td align="right">32</td>
+<td align="right">77.422</td>
+</tr>
+<tr>
+<td>Aug-29</td>
+<td align="right">1986</td>
+<td align="right">49</td>
+<td align="right">77.341</td>
+</tr>
+<tr>
+<td>May-22</td>
+<td align="right">1968</td>
+<td align="right">40</td>
+<td align="right">77.288</td>
+</tr>
+<tr>
+<td>May-25</td>
+<td align="right">2013</td>
+<td align="right">41</td>
+<td align="right">77.288</td>
+</tr>
+<tr>
+<td>Sep-17</td>
+<td align="right">1966</td>
+<td align="right">43</td>
+<td align="right">77.23</td>
+</tr>
+<tr>
+<td>May-16</td>
+<td align="right">1973</td>
+<td align="right">38</td>
+<td align="right">77.002</td>
+</tr>
+<tr>
+<td>Jul-10</td>
+<td align="right">1963</td>
+<td align="right">54</td>
+<td align="right">76.857</td>
+</tr>
+<tr>
+<td>Jun-30</td>
+<td align="right">1919</td>
+<td align="right">52</td>
+<td align="right">76.768</td>
+</tr>
+<tr>
+<td>Jun-24</td>
+<td align="right">1947</td>
+<td align="right">51</td>
+<td align="right">76.768</td>
+</tr>
+<tr>
+<td>Sep-11</td>
+<td align="right">1956</td>
+<td align="right">45</td>
+<td align="right">76.661</td>
+</tr>
+<tr>
+<td>Apr-06</td>
+<td align="right">2004</td>
+<td align="right">28</td>
+<td align="right">76.614</td>
+</tr>
+<tr>
+<td>Jul-18</td>
+<td align="right">1946</td>
+<td align="right">54</td>
+<td align="right">76.193</td>
+</tr>
+<tr>
+<td>Jul-23</td>
+<td align="right">1947</td>
+<td align="right">54</td>
+<td align="right">76.193</td>
+</tr>
+<tr>
+<td>Jul-13</td>
+<td align="right">1963</td>
+<td align="right">54</td>
+<td align="right">76.193</td>
+</tr>
+<tr>
+<td>Oct-15</td>
+<td align="right">2006</td>
+<td align="right">33</td>
+<td align="right">76.156</td>
+</tr>
+<tr>
+<td>Jun-09</td>
+<td align="right">2002</td>
+<td align="right">47</td>
+<td align="right">76.147</td>
+</tr>
+<tr>
+<td>May-07</td>
+<td align="right">1970</td>
+<td align="right">35</td>
+<td align="right">76.144</td>
+</tr>
+<tr>
+<td>May-20</td>
+<td align="right">2002</td>
+<td align="right">39</td>
+<td align="right">76.144</td>
+</tr>
+<tr>
+<td>Sep-21</td>
+<td align="right">1962</td>
+<td align="right">41</td>
+<td align="right">76.091</td>
+</tr>
+<tr>
+<td>Apr-22</td>
+<td align="right">1978</td>
+<td align="right">32</td>
+<td align="right">76.009</td>
+</tr>
+<tr>
+<td>Jul-01</td>
+<td align="right">1919</td>
+<td align="right">53</td>
+<td align="right">75.861</td>
+</tr>
+<tr>
+<td>Sep-28</td>
+<td align="right">1947</td>
+<td align="right">38</td>
+<td align="right">75.806</td>
+</tr>
+<tr>
+<td>May-04</td>
+<td align="right">1971</td>
+<td align="right">34</td>
+<td align="right">75.572</td>
+</tr>
+<tr>
+<td>May-27</td>
+<td align="right">1961</td>
+<td align="right">41</td>
+<td align="right">75.286</td>
+</tr>
+<tr>
+<td>Sep-25</td>
+<td align="right">1950</td>
+<td align="right">39</td>
+<td align="right">75.237</td>
+</tr>
+<tr>
+<td>Sep-05</td>
+<td align="right">1997</td>
+<td align="right">46</td>
+<td align="right">74.382</td>
+</tr>
+<tr>
+<td>Jun-23</td>
+<td align="right">1992</td>
+<td align="right">50</td>
+<td align="right">74.281</td>
+</tr>
+<tr>
+<td>Oct-16</td>
+<td align="right">1945</td>
+<td align="right">32</td>
+<td align="right">74.258</td>
+</tr>
+<tr>
+<td>Aug-13</td>
+<td align="right">1979</td>
+<td align="right">50</td>
+<td align="right">74.146</td>
+</tr>
+<tr>
+<td>May-06</td>
+<td align="right">1973</td>
+<td align="right">34</td>
+<td align="right">74.142</td>
+</tr>
+<tr>
+<td>Jun-29</td>
+<td align="right">1970</td>
+<td align="right">51</td>
+<td align="right">73.97</td>
+</tr>
+<tr>
+<td>Jun-05</td>
+<td align="right">1997</td>
+<td align="right">45</td>
+<td align="right">73.97</td>
+</tr>
+<tr>
+<td>Jun-15</td>
+<td align="right">1979</td>
+<td align="right">48</td>
+<td align="right">73.97</td>
+</tr>
+<tr>
+<td>Oct-08</td>
+<td align="right">1964</td>
+<td align="right">35</td>
+<td align="right">73.941</td>
+</tr>
+<tr>
+<td>Apr-02</td>
+<td align="right">1923</td>
+<td align="right">26</td>
+<td align="right">73.888</td>
+</tr>
+<tr>
+<td>Jul-08</td>
+<td align="right">1979</td>
+<td align="right">53</td>
+<td align="right">73.87</td>
+</tr>
+<tr>
+<td>Sep-24</td>
+<td align="right">1963</td>
+<td align="right">39</td>
+<td align="right">73.813</td>
+</tr>
+<tr>
+<td>Jun-19</td>
+<td align="right">1965</td>
+<td align="right">49</td>
+<td align="right">73.659</td>
+</tr>
+<tr>
+<td>Jul-09</td>
+<td align="right">1984</td>
+<td align="right">53</td>
+<td align="right">73.538</td>
+</tr>
+<tr>
+<td>Dec-06</td>
+<td align="right">1992</td>
+<td align="right">19</td>
+<td align="right">73.004</td>
+</tr>
+<tr>
+<td>Apr-18</td>
+<td align="right">1983</td>
+<td align="right">30</td>
+<td align="right">72.979</td>
+</tr>
+<tr>
+<td>Sep-10</td>
+<td align="right">1956</td>
+<td align="right">44</td>
+<td align="right">72.958</td>
+</tr>
+<tr>
+<td>Apr-07</td>
+<td align="right">2002</td>
+<td align="right">27</td>
+<td align="right">72.676</td>
+</tr>
+<tr>
+<td>Apr-30</td>
+<td align="right">1961</td>
+<td align="right">33</td>
+<td align="right">72.676</td>
+</tr>
+<tr>
+<td>Oct-07</td>
+<td align="right">1935</td>
+<td align="right">35</td>
+<td align="right">72.676</td>
+</tr>
+<tr>
+<td>Dec-02</td>
+<td align="right">1999</td>
+<td align="right">20</td>
+<td align="right">72.657</td>
+</tr>
+<tr>
+<td>Apr-08</td>
+<td align="right">2007</td>
+<td align="right">27</td>
+<td align="right">72.07</td>
+</tr>
+<tr>
+<td>Apr-27</td>
+<td align="right">1976</td>
+<td align="right">32</td>
+<td align="right">72.07</td>
+</tr>
+<tr>
+<td>Oct-23</td>
+<td align="right">1998</td>
+<td align="right">29</td>
+<td align="right">72.043</td>
+</tr>
+<tr>
+<td>Dec-05</td>
+<td align="right">2000</td>
+<td align="right">19</td>
+<td align="right">71.962</td>
+</tr>
+<tr>
+<td>May-12</td>
+<td align="right">1969</td>
+<td align="right">35</td>
+<td align="right">71.853</td>
+</tr>
+<tr>
+<td>Nov-03</td>
+<td align="right">1996</td>
+<td align="right">28</td>
+<td align="right">71.537</td>
+</tr>
+<tr>
+<td>Apr-24</td>
+<td align="right">1986</td>
+<td align="right">31</td>
+<td align="right">71.464</td>
+</tr>
+<tr>
+<td>Oct-06</td>
+<td align="right">1965</td>
+<td align="right">35</td>
+<td align="right">71.41</td>
+</tr>
+<tr>
+<td>Sep-14</td>
+<td align="right">1985</td>
+<td align="right">42</td>
+<td align="right">71.25</td>
+</tr>
+<tr>
+<td>Apr-28</td>
+<td align="right">1976</td>
+<td align="right">32</td>
+<td align="right">71.161</td>
+</tr>
+<tr>
+<td>Apr-13</td>
+<td align="right">1975</td>
+<td align="right">28</td>
+<td align="right">70.858</td>
+</tr>
+<tr>
+<td>Apr-17</td>
+<td align="right">1962</td>
+<td align="right">29</td>
+<td align="right">70.858</td>
+</tr>
+<tr>
+<td>Oct-01</td>
+<td align="right">1993</td>
+<td align="right">37</td>
+<td align="right">70.777</td>
+</tr>
+<tr>
+<td>May-23</td>
+<td align="right">2002</td>
+<td align="right">38</td>
+<td align="right">70.709</td>
+</tr>
+<tr>
+<td>Sep-26</td>
+<td align="right">1950</td>
+<td align="right">37</td>
+<td align="right">70.68</td>
+</tr>
+<tr>
+<td>Jun-02</td>
+<td align="right">1966</td>
+<td align="right">43</td>
+<td align="right">70.549</td>
+</tr>
+<tr>
+<td>Oct-28</td>
+<td align="right">1976</td>
+<td align="right">27</td>
+<td align="right">70.461</td>
+</tr>
+<tr>
+<td>May-17</td>
+<td align="right">1984</td>
+<td align="right">36</td>
+<td align="right">70.423</td>
+</tr>
+<tr>
+<td>Jul-28</td>
+<td align="right">1962</td>
+<td align="right">52</td>
+<td align="right">70.219</td>
+</tr>
+<tr>
+<td>Apr-03</td>
+<td align="right">1992</td>
+<td align="right">25</td>
+<td align="right">69.95</td>
+</tr>
+<tr>
+<td>Apr-11</td>
+<td align="right">1960</td>
+<td align="right">27</td>
+<td align="right">69.647</td>
+</tr>
+<tr>
+<td>Jun-06</td>
+<td align="right">1954</td>
+<td align="right">44</td>
+<td align="right">69.616</td>
+</tr>
+<tr>
+<td>Apr-19</td>
+<td align="right">2001</td>
+<td align="right">29</td>
+<td align="right">69.344</td>
+</tr>
+<tr>
+<td>Aug-30</td>
+<td align="right">1965</td>
+<td align="right">46</td>
+<td align="right">69.208</td>
+</tr>
+<tr>
+<td>Oct-09</td>
+<td align="right">2000</td>
+<td align="right">33</td>
+<td align="right">68.879</td>
+</tr>
+<tr>
+<td>Apr-16</td>
+<td align="right">1950</td>
+<td align="right">28</td>
+<td align="right">68.738</td>
+</tr>
+<tr>
+<td>Jun-01</td>
+<td align="right">1984</td>
+<td align="right">42</td>
+<td align="right">68.684</td>
+</tr>
+<tr>
+<td>Oct-26</td>
+<td align="right">1962</td>
+<td align="right">27</td>
+<td align="right">68.562</td>
+</tr>
+<tr>
+<td>Jan-01</td>
+<td align="right">1918</td>
+<td align="right">12</td>
+<td align="right">68.533</td>
+</tr>
+<tr>
+<td>Jun-18</td>
+<td align="right">1961</td>
+<td align="right">47</td>
+<td align="right">68.373</td>
+</tr>
+<tr>
+<td>Jun-14</td>
+<td align="right">1985</td>
+<td align="right">46</td>
+<td align="right">68.373</td>
+</tr>
+<tr>
+<td>Oct-11</td>
+<td align="right">2000</td>
+<td align="right">32</td>
+<td align="right">68.246</td>
+</tr>
+<tr>
+<td>Oct-25</td>
+<td align="right">1962</td>
+<td align="right">27</td>
+<td align="right">67.613</td>
+</tr>
+<tr>
+<td>Oct-13</td>
+<td align="right">1988</td>
+<td align="right">31</td>
+<td align="right">67.297</td>
+</tr>
+<tr>
+<td>Apr-14</td>
+<td align="right">1950</td>
+<td align="right">27</td>
+<td align="right">67.223</td>
+</tr>
+<tr>
+<td>Nov-02</td>
+<td align="right">1976</td>
+<td align="right">27</td>
+<td align="right">67.207</td>
+</tr>
+<tr>
+<td>May-11</td>
+<td align="right">1977</td>
+<td align="right">33</td>
+<td align="right">66.991</td>
+</tr>
+<tr>
+<td>Oct-18</td>
+<td align="right">1977</td>
+<td align="right">29</td>
+<td align="right">66.98</td>
+</tr>
+<tr>
+<td>Sep-23</td>
+<td align="right">1983</td>
+<td align="right">37</td>
+<td align="right">66.978</td>
+</tr>
+<tr>
+<td>Nov-17</td>
+<td align="right">1997</td>
+<td align="right">23</td>
+<td align="right">66.846</td>
+</tr>
+<tr>
+<td>May-18</td>
+<td align="right">1973</td>
+<td align="right">35</td>
+<td align="right">66.705</td>
+</tr>
+<tr>
+<td>Apr-15</td>
+<td align="right">1950</td>
+<td align="right">27</td>
+<td align="right">66.314</td>
+</tr>
+<tr>
+<td>May-09</td>
+<td align="right">1956</td>
+<td align="right">32</td>
+<td align="right">65.847</td>
+</tr>
+<tr>
+<td>Oct-20</td>
+<td align="right">1992</td>
+<td align="right">28</td>
+<td align="right">65.715</td>
+</tr>
+<tr>
+<td>Apr-12</td>
+<td align="right">1973</td>
+<td align="right">26</td>
+<td align="right">65.708</td>
+</tr>
+<tr>
+<td>Apr-01</td>
+<td align="right">1923</td>
+<td align="right">23</td>
+<td align="right">65.405</td>
+</tr>
+<tr>
+<td>Apr-20</td>
+<td align="right">1983</td>
+<td align="right">28</td>
+<td align="right">65.405</td>
+</tr>
+<tr>
+<td>Oct-29</td>
+<td align="right">1976</td>
+<td align="right">25</td>
+<td align="right">65.082</td>
+</tr>
+<tr>
+<td>Dec-09</td>
+<td align="right">2006</td>
+<td align="right">16</td>
+<td align="right">65.014</td>
+</tr>
+<tr>
+<td>Jun-11</td>
+<td align="right">1972</td>
+<td align="right">44</td>
+<td align="right">64.952</td>
+</tr>
+<tr>
+<td>Apr-21</td>
+<td align="right">1983</td>
+<td align="right">28</td>
+<td align="right">64.8</td>
+</tr>
+<tr>
+<td>Apr-25</td>
+<td align="right">1969</td>
+<td align="right">29</td>
+<td align="right">64.497</td>
+</tr>
+<tr>
+<td>Nov-22</td>
+<td align="right">2008</td>
+<td align="right">21</td>
+<td align="right">64.32</td>
+</tr>
+<tr>
+<td>Mar-20</td>
+<td align="right">1923</td>
+<td align="right">22</td>
+<td align="right">64.028</td>
+</tr>
+<tr>
+<td>Oct-10</td>
+<td align="right">2000</td>
+<td align="right">31</td>
+<td align="right">63.816</td>
+</tr>
+<tr>
+<td>Mar-13</td>
+<td align="right">1998</td>
+<td align="right">20</td>
+<td align="right">63.681</td>
+</tr>
+<tr>
+<td>Mar-24</td>
+<td align="right">1971</td>
+<td align="right">23</td>
+<td align="right">63.681</td>
+</tr>
+<tr>
+<td>Nov-10</td>
+<td align="right">1957</td>
+<td align="right">24</td>
+<td align="right">63.599</td>
+</tr>
+<tr>
+<td>Oct-24</td>
+<td align="right">1969</td>
+<td align="right">26</td>
+<td align="right">63.5</td>
+</tr>
+<tr>
+<td>May-02</td>
+<td align="right">1963</td>
+<td align="right">29</td>
+<td align="right">62.987</td>
+</tr>
+<tr>
+<td>May-28</td>
+<td align="right">1961</td>
+<td align="right">37</td>
+<td align="right">62.987</td>
+</tr>
+<tr>
+<td>Nov-05</td>
+<td align="right">2006</td>
+<td align="right">25</td>
+<td align="right">62.877</td>
+</tr>
+<tr>
+<td>Nov-13</td>
+<td align="right">1977</td>
+<td align="right">23</td>
+<td align="right">62.877</td>
+</tr>
+<tr>
+<td>Dec-27</td>
+<td align="right">1948</td>
+<td align="right">12</td>
+<td align="right">62.582</td>
+</tr>
+<tr>
+<td>Oct-30</td>
+<td align="right">1965</td>
+<td align="right">24</td>
+<td align="right">62.55</td>
+</tr>
+<tr>
+<td>Nov-01</td>
+<td align="right">1954</td>
+<td align="right">26</td>
+<td align="right">62.516</td>
+</tr>
+<tr>
+<td>Mar-22</td>
+<td align="right">1986</td>
+<td align="right">22</td>
+<td align="right">62.292</td>
+</tr>
+<tr>
+<td>Oct-14</td>
+<td align="right">1988</td>
+<td align="right">29</td>
+<td align="right">62.234</td>
+</tr>
+<tr>
+<td>May-10</td>
+<td align="right">1977</td>
+<td align="right">31</td>
+<td align="right">62.129</td>
+</tr>
+<tr>
+<td>Nov-04</td>
+<td align="right">1966</td>
+<td align="right">25</td>
+<td align="right">61.795</td>
+</tr>
+<tr>
+<td>Nov-27</td>
+<td align="right">1977</td>
+<td align="right">19</td>
+<td align="right">61.795</td>
+</tr>
+<tr>
+<td>Oct-22</td>
+<td align="right">1974</td>
+<td align="right">26</td>
+<td align="right">61.601</td>
+</tr>
+<tr>
+<td>Mar-30</td>
+<td align="right">1893</td>
+<td align="right">24</td>
+<td align="right">61.598</td>
+</tr>
+<tr>
+<td>Jun-12</td>
+<td align="right">1972</td>
+<td align="right">43</td>
+<td align="right">60.91</td>
+</tr>
+<tr>
+<td>Mar-12</td>
+<td align="right">1969</td>
+<td align="right">19</td>
+<td align="right">60.904</td>
+</tr>
+<tr>
+<td>Mar-16</td>
+<td align="right">1970</td>
+<td align="right">20</td>
+<td align="right">60.904</td>
+</tr>
+<tr>
+<td>Oct-21</td>
+<td align="right">1974</td>
+<td align="right">26</td>
+<td align="right">60.652</td>
+</tr>
+<tr>
+<td>Jan-26</td>
+<td align="right">1940</td>
+<td align="right">10</td>
+<td align="right">60.451</td>
+</tr>
+<tr>
+<td>Nov-18</td>
+<td align="right">1959</td>
+<td align="right">21</td>
+<td align="right">60.351</td>
+</tr>
+<tr>
+<td>Nov-29</td>
+<td align="right">1955</td>
+<td align="right">18</td>
+<td align="right">60.351</td>
+</tr>
+<tr>
+<td>Oct-05</td>
+<td align="right">1974</td>
+<td align="right">32</td>
+<td align="right">60.335</td>
+</tr>
+<tr>
+<td>Oct-12</td>
+<td align="right">1964</td>
+<td align="right">29</td>
+<td align="right">60.019</td>
+</tr>
+<tr>
+<td>Jul-11</td>
+<td align="right">1963</td>
+<td align="right">49</td>
+<td align="right">59.93</td>
+</tr>
+<tr>
+<td>Jan-07</td>
+<td align="right">2014</td>
+<td align="right">9</td>
+<td align="right">59.805</td>
+</tr>
+<tr>
+<td>Dec-07</td>
+<td align="right">1954</td>
+<td align="right">15</td>
+<td align="right">59.803</td>
+</tr>
+<tr>
+<td>Jan-15</td>
+<td align="right">1994</td>
+<td align="right">9</td>
+<td align="right">59.481</td>
+</tr>
+<tr>
+<td>Nov-28</td>
+<td align="right">1903</td>
+<td align="right">18</td>
+<td align="right">59.269</td>
+</tr>
+<tr>
+<td>Jan-03</td>
+<td align="right">1887</td>
+<td align="right">9</td>
+<td align="right">59.158</td>
+</tr>
+<tr>
+<td>Dec-10</td>
+<td align="right">1917</td>
+<td align="right">14</td>
+<td align="right">59.108</td>
+</tr>
+<tr>
+<td>Dec-20</td>
+<td align="right">1963</td>
+<td align="right">12</td>
+<td align="right">59.108</td>
+</tr>
+<tr>
+<td>Apr-09</td>
+<td align="right">1972</td>
+<td align="right">23</td>
+<td align="right">59.043</td>
+</tr>
+<tr>
+<td>Jul-02</td>
+<td align="right">1975</td>
+<td align="right">48</td>
+<td align="right">58.934</td>
+</tr>
+<tr>
+<td>Dec-14</td>
+<td align="right">1960</td>
+<td align="right">13</td>
+<td align="right">58.761</td>
+</tr>
+<tr>
+<td>Nov-12</td>
+<td align="right">1957</td>
+<td align="right">22</td>
+<td align="right">58.547</td>
+</tr>
+<tr>
+<td>Mar-11</td>
+<td align="right">1960</td>
+<td align="right">18</td>
+<td align="right">58.474</td>
+</tr>
+<tr>
+<td>Mar-26</td>
+<td align="right">1940</td>
+<td align="right">22</td>
+<td align="right">58.474</td>
+</tr>
+<tr>
+<td>Apr-10</td>
+<td align="right">1985</td>
+<td align="right">23</td>
+<td align="right">58.135</td>
+</tr>
+<tr>
+<td>Oct-03</td>
+<td align="right">1974</td>
+<td align="right">32</td>
+<td align="right">57.804</td>
+</tr>
+<tr>
+<td>Nov-11</td>
+<td align="right">1957</td>
+<td align="right">22</td>
+<td align="right">57.465</td>
+</tr>
+<tr>
+<td>Nov-15</td>
+<td align="right">1969</td>
+<td align="right">21</td>
+<td align="right">57.465</td>
+</tr>
+<tr>
+<td>Mar-08</td>
+<td align="right">1920</td>
+<td align="right">17</td>
+<td align="right">57.433</td>
+</tr>
+<tr>
+<td>Mar-31</td>
+<td align="right">1964</td>
+<td align="right">23</td>
+<td align="right">57.086</td>
+</tr>
+<tr>
+<td>Dec-04</td>
+<td align="right">1976</td>
+<td align="right">15</td>
+<td align="right">57.024</td>
+</tr>
+<tr>
+<td>Mar-09</td>
+<td align="right">1996</td>
+<td align="right">17</td>
+<td align="right">56.739</td>
+</tr>
+<tr>
+<td>Oct-02</td>
+<td align="right">1947</td>
+<td align="right">32</td>
+<td align="right">56.539</td>
+</tr>
+<tr>
+<td>Nov-06</td>
+<td align="right">1991</td>
+<td align="right">23</td>
+<td align="right">56.382</td>
+</tr>
+<tr>
+<td>Dec-03</td>
+<td align="right">1979</td>
+<td align="right">15</td>
+<td align="right">56.329</td>
+</tr>
+<tr>
+<td>Dec-11</td>
+<td align="right">1977</td>
+<td align="right">13</td>
+<td align="right">56.329</td>
+</tr>
+<tr>
+<td>Dec-29</td>
+<td align="right">1917</td>
+<td align="right">10</td>
+<td align="right">56.329</td>
+</tr>
+<tr>
+<td>Mar-25</td>
+<td align="right">1940</td>
+<td align="right">21</td>
+<td align="right">56.045</td>
+</tr>
+<tr>
+<td>Jan-02</td>
+<td align="right">1928</td>
+<td align="right">8</td>
+<td align="right">55.925</td>
+</tr>
+<tr>
+<td>Oct-04</td>
+<td align="right">1974</td>
+<td align="right">31</td>
+<td align="right">55.906</td>
+</tr>
+<tr>
+<td>Mar-18</td>
+<td align="right">1967</td>
+<td align="right">19</td>
+<td align="right">55.697</td>
+</tr>
+<tr>
+<td>Nov-20</td>
+<td align="right">1951</td>
+<td align="right">19</td>
+<td align="right">55.3</td>
+</tr>
+<tr>
+<td>Mar-19</td>
+<td align="right">1967</td>
+<td align="right">19</td>
+<td align="right">54.656</td>
+</tr>
+<tr>
+<td>Jan-23</td>
+<td align="right">1977</td>
+<td align="right">8</td>
+<td align="right">54.632</td>
+</tr>
+<tr>
+<td>Nov-23</td>
+<td align="right">1971</td>
+<td align="right">18</td>
+<td align="right">54.578</td>
+</tr>
+<tr>
+<td>Feb-07</td>
+<td align="right">1995</td>
+<td align="right">12</td>
+<td align="right">54.373</td>
+</tr>
+<tr>
+<td>Mar-23</td>
+<td align="right">1888</td>
+<td align="right">20</td>
+<td align="right">54.309</td>
+</tr>
+<tr>
+<td>Nov-19</td>
+<td align="right">2014</td>
+<td align="right">19</td>
+<td align="right">54.217</td>
+</tr>
+<tr>
+<td>Jan-25</td>
+<td align="right">1963</td>
+<td align="right">8</td>
+<td align="right">53.986</td>
+</tr>
+<tr>
+<td>Dec-08</td>
+<td align="right">1977</td>
+<td align="right">13</td>
+<td align="right">53.897</td>
+</tr>
+<tr>
+<td>Dec-17</td>
+<td align="right">1963</td>
+<td align="right">11</td>
+<td align="right">53.897</td>
+</tr>
+<tr>
+<td>Dec-23</td>
+<td align="right">1989</td>
+<td align="right">10</td>
+<td align="right">53.897</td>
+</tr>
+<tr>
+<td>Nov-07</td>
+<td align="right">1967</td>
+<td align="right">22</td>
+<td align="right">53.856</td>
+</tr>
+<tr>
+<td>Jan-27</td>
+<td align="right">1940</td>
+<td align="right">8</td>
+<td align="right">53.662</td>
+</tr>
+<tr>
+<td>Jan-08</td>
+<td align="right">1970</td>
+<td align="right">7</td>
+<td align="right">53.339</td>
+</tr>
+<tr>
+<td>Nov-14</td>
+<td align="right">1977</td>
+<td align="right">20</td>
+<td align="right">53.135</td>
+</tr>
+<tr>
+<td>Jan-06</td>
+<td align="right">1924</td>
+<td align="right">7</td>
+<td align="right">53.016</td>
+</tr>
+<tr>
+<td>Mar-05</td>
+<td align="right">1960</td>
+<td align="right">15</td>
+<td align="right">52.921</td>
+</tr>
+<tr>
+<td>Mar-17</td>
+<td align="right">1981</td>
+<td align="right">18</td>
+<td align="right">52.921</td>
+</tr>
+<tr>
+<td>Dec-28</td>
+<td align="right">1925</td>
+<td align="right">9</td>
+<td align="right">52.507</td>
+</tr>
+<tr>
+<td>Mar-10</td>
+<td align="right">1932</td>
+<td align="right">16</td>
+<td align="right">52.226</td>
+</tr>
+<tr>
+<td>Dec-19</td>
+<td align="right">1975</td>
+<td align="right">10</td>
+<td align="right">51.813</td>
+</tr>
+<tr>
+<td>Mar-07</td>
+<td align="right">1960</td>
+<td align="right">15</td>
+<td align="right">51.185</td>
+</tr>
+<tr>
+<td>Dec-18</td>
+<td align="right">1973</td>
+<td align="right">10</td>
+<td align="right">51.118</td>
+</tr>
+<tr>
+<td>Jan-24</td>
+<td align="right">1963</td>
+<td align="right">7</td>
+<td align="right">51.076</td>
+</tr>
+<tr>
+<td>Nov-30</td>
+<td align="right">1929</td>
+<td align="right">15</td>
+<td align="right">50.609</td>
+</tr>
+<tr>
+<td>Mar-27</td>
+<td align="right">1955</td>
+<td align="right">20</td>
+<td align="right">50.491</td>
+</tr>
+<tr>
+<td>Dec-22</td>
+<td align="right">1976</td>
+<td align="right">9</td>
+<td align="right">50.076</td>
+</tr>
+<tr>
+<td>Jan-04</td>
+<td align="right">1918</td>
+<td align="right">6</td>
+<td align="right">49.783</td>
+</tr>
+<tr>
+<td>Jan-05</td>
+<td align="right">1981</td>
+<td align="right">6</td>
+<td align="right">49.783</td>
+</tr>
+<tr>
+<td>Jan-12</td>
+<td align="right">1981</td>
+<td align="right">6</td>
+<td align="right">49.783</td>
+</tr>
+<tr>
+<td>Jan-14</td>
+<td align="right">1912</td>
+<td align="right">6</td>
+<td align="right">49.783</td>
+</tr>
+<tr>
+<td>Jan-29</td>
+<td align="right">2000</td>
+<td align="right">7</td>
+<td align="right">49.783</td>
+</tr>
+<tr>
+<td>Jan-30</td>
+<td align="right">2014</td>
+<td align="right">7</td>
+<td align="right">49.46</td>
+</tr>
+<tr>
+<td>Mar-28</td>
+<td align="right">1969</td>
+<td align="right">20</td>
+<td align="right">49.45</td>
+</tr>
+<tr>
+<td>Jun-08</td>
+<td align="right">1977</td>
+<td align="right">38</td>
+<td align="right">49.094</td>
+</tr>
+<tr>
+<td>Feb-24</td>
+<td align="right">1901</td>
+<td align="right">13</td>
+<td align="right">48.919</td>
+</tr>
+<tr>
+<td>Nov-21</td>
+<td align="right">1914</td>
+<td align="right">17</td>
+<td align="right">48.805</td>
+</tr>
+<tr>
+<td>Mar-14</td>
+<td align="right">1926</td>
+<td align="right">16</td>
+<td align="right">48.755</td>
+</tr>
+<tr>
+<td>Mar-29</td>
+<td align="right">1966</td>
+<td align="right">20</td>
+<td align="right">48.755</td>
+</tr>
+<tr>
+<td>Nov-08</td>
+<td align="right">1967</td>
+<td align="right">20</td>
+<td align="right">47.362</td>
+</tr>
+<tr>
+<td>Mar-04</td>
+<td align="right">1943</td>
+<td align="right">13</td>
+<td align="right">46.673</td>
+</tr>
+<tr>
+<td>Dec-12</td>
+<td align="right">1957</td>
+<td align="right">10</td>
+<td align="right">46.602</td>
+</tr>
+<tr>
+<td>Feb-16</td>
+<td align="right">1905</td>
+<td align="right">11</td>
+<td align="right">46.374</td>
+</tr>
+<tr>
+<td>Feb-28</td>
+<td align="right">1934</td>
+<td align="right">13</td>
+<td align="right">46.011</td>
+</tr>
+<tr>
+<td>Mar-21</td>
+<td align="right">1965</td>
+<td align="right">17</td>
+<td align="right">45.979</td>
+</tr>
+<tr>
+<td>Dec-21</td>
+<td align="right">1963</td>
+<td align="right">8</td>
+<td align="right">45.907</td>
+</tr>
+<tr>
+<td>Feb-11</td>
+<td align="right">1899</td>
+<td align="right">10</td>
+<td align="right">45.284</td>
+</tr>
+<tr>
+<td>Feb-19</td>
+<td align="right">1979</td>
+<td align="right">11</td>
+<td align="right">44.556</td>
+</tr>
+<tr>
+<td>Nov-24</td>
+<td align="right">1970</td>
+<td align="right">15</td>
+<td align="right">44.475</td>
+</tr>
+<tr>
+<td>Oct-27</td>
+<td align="right">1962</td>
+<td align="right">19</td>
+<td align="right">44.198</td>
+</tr>
+<tr>
+<td>Nov-16</td>
+<td align="right">1967</td>
+<td align="right">17</td>
+<td align="right">44.114</td>
+</tr>
+<tr>
+<td>Mar-03</td>
+<td align="right">1980</td>
+<td align="right">12</td>
+<td align="right">43.896</td>
+</tr>
+<tr>
+<td>Feb-06</td>
+<td align="right">1917</td>
+<td align="right">9</td>
+<td align="right">43.829</td>
+</tr>
+<tr>
+<td>Jan-11</td>
+<td align="right">1982</td>
+<td align="right">4</td>
+<td align="right">43.641</td>
+</tr>
+<tr>
+<td>Jan-13</td>
+<td align="right">1981</td>
+<td align="right">4</td>
+<td align="right">43.318</td>
+</tr>
+<tr>
+<td>Nov-26</td>
+<td align="right">1950</td>
+<td align="right">14</td>
+<td align="right">43.032</td>
+</tr>
+<tr>
+<td>Feb-09</td>
+<td align="right">1895</td>
+<td align="right">9</td>
+<td align="right">42.739</td>
+</tr>
+<tr>
+<td>Feb-22</td>
+<td align="right">1968</td>
+<td align="right">11</td>
+<td align="right">42.739</td>
+</tr>
+<tr>
+<td>Feb-01</td>
+<td align="right">1981</td>
+<td align="right">8</td>
+<td align="right">42.375</td>
+</tr>
+<tr>
+<td>Mar-01</td>
+<td align="right">1980</td>
+<td align="right">11</td>
+<td align="right">42.16</td>
+</tr>
+<tr>
+<td>Dec-15</td>
+<td align="right">1958</td>
+<td align="right">8</td>
+<td align="right">42.085</td>
+</tr>
+<tr>
+<td>Mar-02</td>
+<td align="right">1980</td>
+<td align="right">11</td>
+<td align="right">41.466</td>
+</tr>
+<tr>
+<td>Mar-15</td>
+<td align="right">1993</td>
+<td align="right">14</td>
+<td align="right">41.119</td>
+</tr>
+<tr>
+<td>Jan-10</td>
+<td align="right">1970</td>
+<td align="right">3</td>
+<td align="right">40.408</td>
+</tr>
+<tr>
+<td>Dec-01</td>
+<td align="right">1976</td>
+<td align="right">11</td>
+<td align="right">40.348</td>
+</tr>
+<tr>
+<td>Dec-24</td>
+<td align="right">1983</td>
+<td align="right">6</td>
+<td align="right">40.348</td>
+</tr>
+<tr>
+<td>Feb-26</td>
+<td align="right">1967</td>
+<td align="right">11</td>
+<td align="right">40.194</td>
+</tr>
+<tr>
+<td>Jan-16</td>
+<td align="right">1994</td>
+<td align="right">3</td>
+<td align="right">39.762</td>
+</tr>
+<tr>
+<td>Dec-31</td>
+<td align="right">1917</td>
+<td align="right">5</td>
+<td align="right">39.654</td>
+</tr>
+<tr>
+<td>Jan-18</td>
+<td align="right">1977</td>
+<td align="right">3</td>
+<td align="right">39.439</td>
+</tr>
+<tr>
+<td>Dec-16</td>
+<td align="right">1958</td>
+<td align="right">7</td>
+<td align="right">39.306</td>
+</tr>
+<tr>
+<td>Feb-10</td>
+<td align="right">1979</td>
+<td align="right">8</td>
+<td align="right">38.376</td>
+</tr>
+<tr>
+<td>Mar-06</td>
+<td align="right">1960</td>
+<td align="right">11</td>
+<td align="right">38.342</td>
+</tr>
+<tr>
+<td>Feb-03</td>
+<td align="right">1980</td>
+<td align="right">7</td>
+<td align="right">38.012</td>
+</tr>
+<tr>
+<td>Dec-26</td>
+<td align="right">1983</td>
+<td align="right">5</td>
+<td align="right">37.916</td>
+</tr>
+<tr>
+<td>Feb-04</td>
+<td align="right">1981</td>
+<td align="right">7</td>
+<td align="right">37.649</td>
+</tr>
+<tr>
+<td>Jan-19</td>
+<td align="right">1994</td>
+<td align="right">2</td>
+<td align="right">36.206</td>
+</tr>
+<tr>
+<td>Jan-31</td>
+<td align="right">1966</td>
+<td align="right">3</td>
+<td align="right">36.206</td>
+</tr>
+<tr>
+<td>Dec-25</td>
+<td align="right">1983</td>
+<td align="right">4</td>
+<td align="right">34.095</td>
+</tr>
+<tr>
+<td>Nov-09</td>
+<td align="right">1976</td>
+<td align="right">16</td>
+<td align="right">34.011</td>
+</tr>
+<tr>
+<td>Feb-21</td>
+<td align="right">1896</td>
+<td align="right">8</td>
+<td align="right">32.559</td>
+</tr>
+<tr>
+<td>Feb-27</td>
+<td align="right">1963</td>
+<td align="right">9</td>
+<td align="right">32.195</td>
+</tr>
+<tr>
+<td>Nov-25</td>
+<td align="right">1970</td>
+<td align="right">11</td>
+<td align="right">31.124</td>
+</tr>
+<tr>
+<td>Feb-02</td>
+<td align="right">1971</td>
+<td align="right">5</td>
+<td align="right">31.105</td>
+</tr>
+<tr>
+<td>Feb-17</td>
+<td align="right">1958</td>
+<td align="right">7</td>
+<td align="right">31.105</td>
+</tr>
+<tr>
+<td>Feb-18</td>
+<td align="right">1958</td>
+<td align="right">7</td>
+<td align="right">30.741</td>
+</tr>
+<tr>
+<td>Jan-09</td>
+<td align="right">1970</td>
+<td align="right">0</td>
+<td align="right">30.71</td>
+</tr>
+<tr>
+<td>Jan-28</td>
+<td align="right">2000</td>
+<td align="right">1</td>
+<td align="right">30.71</td>
+</tr>
+<tr>
+<td>Feb-12</td>
+<td align="right">1973</td>
+<td align="right">6</td>
+<td align="right">30.377</td>
+</tr>
+<tr>
+<td>Feb-25</td>
+<td align="right">1967</td>
+<td align="right">8</td>
+<td align="right">30.014</td>
+</tr>
+<tr>
+<td>Feb-20</td>
+<td align="right">2015</td>
+<td align="right">7</td>
+<td align="right">29.65</td>
+</tr>
+<tr>
+<td>Jan-22</td>
+<td align="right">1970</td>
+<td align="right">0</td>
+<td align="right">29.094</td>
+</tr>
+<tr>
+<td>Feb-15</td>
+<td align="right">1899</td>
+<td align="right">6</td>
+<td align="right">28.56</td>
+</tr>
+<tr>
+<td>Feb-23</td>
+<td align="right">1978</td>
+<td align="right">7</td>
+<td align="right">27.469</td>
+</tr>
+<tr>
+<td>Jan-17</td>
+<td align="right">1977</td>
+<td align="right">-1</td>
+<td align="right">26.831</td>
+</tr>
+<tr>
+<td>Dec-13</td>
+<td align="right">1962</td>
+<td align="right">4</td>
+<td align="right">26.452</td>
+</tr>
+<tr>
+<td>Feb-08</td>
+<td align="right">1895</td>
+<td align="right">4</td>
+<td align="right">24.924</td>
+</tr>
+<tr>
+<td>Feb-13</td>
+<td align="right">1899</td>
+<td align="right">4</td>
+<td align="right">22.379</td>
+</tr>
+<tr>
+<td>Dec-30</td>
+<td align="right">1917</td>
+<td align="right">0</td>
+<td align="right">21.936</td>
+</tr>
+<tr>
+<td>Jan-20</td>
+<td align="right">1985</td>
+<td align="right">-3</td>
+<td align="right">19.719</td>
+</tr>
+<tr>
+<td>Feb-05</td>
+<td align="right">1996</td>
+<td align="right">0</td>
+<td align="right">11.836</td>
+</tr>
+<tr>
+<td>Feb-14</td>
+<td align="right">1899</td>
+<td align="right">-2</td>
+<td align="right">0.202</td>
+</tr>
+<tr>
+<td>Jan-21</td>
+<td align="right">1985</td>
+<td align="right">-9</td>
+<td align="right">0</td>
+</tr>
+</tbody></table>
+
+</body>
+</html>
+
+
+
+
